@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script>
+        function display(){
+            document.getElementById("myusername").innerHTML = document.getElementById("username").value + "'s Gallery"
+        }
+
+        function setImage(){
+            document.getElementById("profileimg").style.backgroundImage = "url(" + document.getElementById("image_url").value + ")"
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Manjari&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div class="flex-top">
+            <div class="flex-item-1">
+                <!-- Avatar -->
+                <div class="avatar" id="profileimg"></div>
+                <div class="noti">1</div>
+            </div>
+            <div>
+                <a href="https://www.google.com/" class="on-hover"><div style="font-weight: 700;" id="myusername"><p>User name, Gallery</p></div></a>
+                
+            </div>
+            <div class="flex-item-2">
+                <!-- Input -->
+                <div><label>Username</label><input type="text" style="margin-left: 5px;" id="username"><button style="margin-left: 5px;" onclick="display()">set</button></div>
+                <div><label>Image URL</label><input type="text" style="margin-left: 5px;" id="image_url"><button style="margin-left: 5px;" onclick="setImage()">set</button></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" style="grid-column: span 2 / span 2; background-image: url('https://cdn.pixabay.com/photo/2017/10/28/14/56/dolomites-2897227_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2020/03/21/19/27/sea-4955005_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2017/07/19/01/41/clouds-2517653_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2017/08/01/01/17/beach-2562563_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2015/11/18/11/32/mountains-1048995_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2021/11/13/23/06/tree-6792528_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2017/12/14/09/41/new-zealand-3018634_640.jpg')"></div>
+            <div class="gallery-item" style="grid-row: span 2 / span 2; background-image: url('https://cdn.pixabay.com/photo/2014/09/17/13/42/mackerel-sky-449475_640.jpg')" ></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2016/10/21/09/25/rocks-1757593_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2019/07/14/10/48/river-4336788_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2016/10/21/09/25/rocks-1757593_640.jpg')"></div>
+            <div class="gallery-item" style="background-image: url('https://cdn.pixabay.com/photo/2014/11/22/08/37/thames-541456_640.jpg')"></div>
+        </div>
+    </div>
+</body>
+</html>
